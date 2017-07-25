@@ -2,7 +2,7 @@
 <!-- body -->
 <h1>フォームページ</h1>
 <p>
-<%= form_for(@data) do |f| %>
+<%= form_for @datum, url: formpage_path do |f| %>
 <%= f.label :room_type %>
 <%= f.text_field :room_type %>
 
