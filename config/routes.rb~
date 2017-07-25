@@ -2,5 +2,6 @@ Rails.application.routes.draw do
   root 'assessment#home'
   get  '/example',   to: 'assessment#example'
   get  '/formpage',  to: 'assessment#formpage'
-#  get  '/formpage/result', to: 'assessment#result'
+  post '/formpage',  to: 'assessment#send'
+  get  '/result',    to: 'assessment#result'
 end

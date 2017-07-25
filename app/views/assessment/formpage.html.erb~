@@ -3,6 +3,28 @@
 <h1>フォームページ</h1>
 <p>
 <%= form_for(@data) do |f| %>
+<%= f.label :room_type %>
+<%= f.text_field :room_type %>
 
+<%= f.label :num_rooms %>
+<%= f.text_field :num_rooms %>
+
+<%= f.label :square %>
+<%= f.text_field :square %>
+
+<%= f.label :floor %>
+<%= f.text_field :floor %>
+
+<%= f.label :building_type %>
+<%= f.text_field :building_type %>
+
+<%= f.label :structure_type %>
+<%= f.text_field :structure_type %>
+
+<%= f.label :floor_height %>
+<%= f.text_field :floor_height %>
+
+<%= f.submit "送信"%>
+<% end %>
 </p>
 <!-- /body -->
